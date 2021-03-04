@@ -22,7 +22,7 @@ class Duplex:
 		print(f'\r{text}{self.prefix}{inp}', end='')
 	
 	def listen(self, listener):
-		if callable(listener) == False:
+		if not callable(listener):
 			raise Exception(f'Listener must be callable.')
 		print(self.prefix, end='')
 		inp = ''
