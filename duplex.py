@@ -27,9 +27,6 @@ class Duplex:
 		print(self.prefix, end='')
 		inp = ''
 		while inp == '':
-			try:
-				inp = input()
-				listener(inp)
-				inp = ''
-			except KeyboardInterrupt:
-				break
+			inp = input()
+			listener(inp)
+			inp = ''
