@@ -8,15 +8,6 @@ def listener(inp):
 		print('Stopping :)')
 		quit()
 
-def send():
-	while True:
-		print('epic message')
-		sleep(1)
-
-thread = Thread(target=send)
-thread.daemon = True
-thread.start()
-
 terminal = Duplex('> ')
 print = terminal.print
 terminal.listen(listener)
