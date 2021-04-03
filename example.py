@@ -1,4 +1,3 @@
-from threading import Thread
 from duplex import Duplex
 from time import sleep
 
